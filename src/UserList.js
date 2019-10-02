@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AddUser from './AddUser';
 import EditUser from './EditUser';
 import TableRow from './Table/TableRow.js';
-import Search from './Table/Search.js';
 
 class UserList extends Component {
     constructor(props) {
@@ -88,25 +87,45 @@ class UserList extends Component {
         });
         return value;
     }
-    searchUser=(filter,value)=>{
-        if(filter == 0){
-            var userlist =JSON.parse(localStorage.getItem('userlist'));
-            this.setState({
-                userlist:userlist
-            });
-        }
-        else if(filter == 1){
-            this.searchName(value);
-        }
-        else if(filter == 2){
-            this.searchEmail(value);
-        }
-        else if(filter == 3){
-            this.searchDate(value);
-        }
+    // searchUser=(filter,value)=>{
+    //     if(filter === '0'){
+    //         var userlist =JSON.parse(localStorage.getItem('userlist'));
+    //         this.setState({
+    //             userlist : userlist,
+    //         });
+    //     }
+    //     else if(filter === '1'){
+    //         this.searchName(value);
+    //     }
+    //     else if(filter === '2'){
+    //         this.searchEmail(value);
+    //     }
+    //     else if(filter === '3'){
+    //         this.searchDate(value);
+    //     }
+        
 
-    }
-    searchName(name){
+    // }
+    // searchId=(id)=>{
+    //     var value = [];
+    //     var userlist =this.state.userlist;
+    //     if(id===''){
+    //         var userlist =JSON.parse(localStorage.getItem('userlist'));
+    //         this.setState({
+    //             userlist:userlist
+    //         });
+    //     }
+    //     else{
+    //         for( let i=0;i<userlist.length;i++){
+    //             if(userlist[i].id === id)
+    //                 value.push(userlist[i]);
+    //         }
+    //         this.setState({
+    //             userlist:value
+    //         });
+    //     }
+    // }
+    searchName=(name)=>{
         var value = [];
         var userlist =this.state.userlist;
         if(name ===''){
@@ -124,10 +143,11 @@ class UserList extends Component {
                 userlist:value
             });
         }
+        console.log(userlist);
     }
-    searchEmail(email){
+    searchEmail=(email)=>{
         var value = [];
-        var userlist =this.state.userlist;
+        var userlist = this.state.userlist;
         if(email===''){
             var userlist =JSON.parse(localStorage.getItem('userlist'));
             this.setState({
@@ -144,9 +164,9 @@ class UserList extends Component {
             });
         }
     }
-    searchDate(date){
+    searchDate=(date)=>{
         var value = [];
-        var userlist =this.state.userlist;
+        var userlist = this.state.userlist;
         if(date===''){
             var userlist =JSON.parse(localStorage.getItem('userlist'));
             this.setState({
@@ -181,12 +201,15 @@ class UserList extends Component {
                 <br />
                 <br />
                 <button  type="button" className="btn btn-primary col-xs-1" onClick={this.addStatus} >Add User</button>
-                <Search searchUser={this.searchUser}/>
                 <br />
                 <h2>User List</h2>
                 <TableRow 
                     deleteUser={this.deleteUser}
-                    preEditUser={this.preEditUser} 
+                    preEditUser={this.preEditUser}
+                    // searchId={this.searchId}
+                    searchName={this.searchName} 
+                    searchEmail={this.searchEmail} 
+                    searchDate={this.searchDate} 
                     userlist={userlist}
                  />
             </div>
