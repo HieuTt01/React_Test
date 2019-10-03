@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d15b7ab.chunk.css",
-    "main.js": "/static/js/main.b16f0d0a.chunk.js",
-    "main.js.map": "/static/js/main.b16f0d0a.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.d52357dd.js",
-    "runtime~main.js.map": "/static/js/runtime~main.d52357dd.js.map",
-    "static/js/2.1d02123c.chunk.js": "/static/js/2.1d02123c.chunk.js",
-    "static/js/2.1d02123c.chunk.js.map": "/static/js/2.1d02123c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d783b9773f746870623a3a1027df73d5.js": "/precache-manifest.d783b9773f746870623a3a1027df73d5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.0d15b7ab.chunk.css.map": "/static/css/main.0d15b7ab.chunk.css.map"
+    "main.css": "/React_Test/static/css/main.0d15b7ab.chunk.css",
+    "main.js": "/React_Test/static/js/main.b16f0d0a.chunk.js",
+    "main.js.map": "/React_Test/static/js/main.b16f0d0a.chunk.js.map",
+    "runtime~main.js": "/React_Test/static/js/runtime~main.2caf35d2.js",
+    "runtime~main.js.map": "/React_Test/static/js/runtime~main.2caf35d2.js.map",
+    "static/js/2.1d02123c.chunk.js": "/React_Test/static/js/2.1d02123c.chunk.js",
+    "static/js/2.1d02123c.chunk.js.map": "/React_Test/static/js/2.1d02123c.chunk.js.map",
+    "index.html": "/React_Test/index.html",
+    "precache-manifest.528c5941bd098f48af0afe65a053e9a8.js": "/React_Test/precache-manifest.528c5941bd098f48af0afe65a053e9a8.js",
+    "service-worker.js": "/React_Test/service-worker.js",
+    "static/css/main.0d15b7ab.chunk.css.map": "/React_Test/static/css/main.0d15b7ab.chunk.css.map"
   }
 }
